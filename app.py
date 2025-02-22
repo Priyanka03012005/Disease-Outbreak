@@ -7,11 +7,11 @@ st.set_page_config(page_title='Prediction of Disease Outbreaks',
                    layout='wide',
                    page_icon='👩‍⚕️')
 
-diabetes_model= pickle.load(open(r"saved_models\diabetes_model.ssv",'rb'))
+diabetes_model= pickle.load(open(r"saved_models/diabetes_model.ssv",'rb'))
 
-heart_model= pickle.load(open(r"saved_models\heart_model.ssv",'rb'))
+heart_model= pickle.load(open(r"saved_models/heart_model.ssv",'rb'))
 
-parkinsons_model= pickle.load(open(r"saved_models\parkinsons_model.ssv",'rb'))
+parkinsons_model= pickle.load(open(r"saved_models/parkinsons_model.ssv",'rb'))
 
 with st.sidebar:
     selected=option_menu('Prediction of disease outbreak',['Diabetes Prediction','Heart Disease Prediction','Parkinsons prediction'],menu_icon='hospital-fill',icons=['activity','heart','person'],default_index=0)
